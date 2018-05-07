@@ -3,7 +3,7 @@
 <% @courses.each do |course| %>
 <div class="well">
     <h2><%= course.name %></h2>
-    <%= link_to "More Info", course_path(course), :class => 'btn btn-primary' %>
+    <%= link_to "More Info", course_path(course), class: 'btn btn-primary' %>
 </div>
 
 

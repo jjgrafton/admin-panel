@@ -4,5 +4,5 @@
 <p>Total In-Course Hours: <%= @course.total_in_course_hours %></p>
 
 <hr>
-<%= link_to "Edit", edit_instructor_path(@instructor), :class => 'btn btn-default' %>
-<%= link_to "Delete", instructor_path(@instructor), method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-danger' %>
+<%= link_to "Edit", edit_instructor_path(@instructor), class: 'btn btn-default' %>
+<%= link_to "Delete", instructor_path(@instructor), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger' %>

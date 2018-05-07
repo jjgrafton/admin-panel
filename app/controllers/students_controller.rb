@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-    before_action :require_user, only: [:index, :show]
+    #before_action :require_user, only: [:index, :show]
     def index
 
     end
