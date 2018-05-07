@@ -1,5 +1,5 @@
 <h1>Edit Course</h1>
-<%= form_for :course, course_path(@course), method: :patch do |f| %>
+<%= form_for :course, url: course_path(@course), method: :patch do |f| %>
     <% if @instructor.errors.any? %>
         <% @post.errors.full_messages.each do |msg| %>
             <div class="alert alert-danger"><%= msg %></div>
@@ -7,20 +7,20 @@
     <% end %>
     <p>
         <%= f.label :name %><br>
-        <%= f.text_field (:name, class: 'form-control') %>
+        <%= f.text_field(:name, class: 'form-control') %>
     </p>
     
     <p>
         <%= f.label :total_in_course_hours %><br>
-        <%= f.text_field (:total_in_course_hours, class: 'form-control') %>
+        <%= f.text_field(:total_in_course_hours, class: 'form-control') %>
     </p>
 
     <p>
         <%= f.label :instructor %><br>
-        <%= f.text_field (:instructor, class: 'form-control') %>
+        <%= f.text_field(:instructor, class: 'form-control') %>
     </p>
 
 
     <p>
-        <%= f.submit (class: btn btn-primary) %>
+        <%= f.submit(class: btn btn-primary) %>
     </p>

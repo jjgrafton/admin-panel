@@ -3,6 +3,6 @@ class Instructor < ApplicationRecord
     # validates :last_name, presence: true,
 
     belongs_to :course
-    has_many :cohorts, through: :courses
+    has_many :cohorts
     has_many :students
 end
