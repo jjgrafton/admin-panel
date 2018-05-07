@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  total_in_course_hours: 1
+  instructor_name: MyString
+  instructor_id: 1
+
+two:
+  name: MyString
+  total_in_course_hours: 1
+  instructor_name: MyString
+  instructor_id: 1
