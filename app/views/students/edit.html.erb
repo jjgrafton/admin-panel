@@ -1,0 +1,27 @@
+<h1>Edit Student</h1>
+<%= form_for :student, student_path(@student), method: :patch do |f| %>
+    <% if @instructor.errors.any? %>
+        <% @post.errors.full_messages.each do |msg| %>
+            <div class="alert alert-danger"><%= msg %></div>
+        <% end %>
+    <% end %>
+    <p>
+        <%= f.label :first_name %><br>
+        <%= f.text_field (:first_name, {:class => 'form-control'}) %>
+        <%= f.label :last_name %><br>
+        <%= f.text_field (:last_name, {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.label :d_o_b %><br>
+        <%= f.text_field (:d_o_b, {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.label :highest_ed %><br>
+        <%= f.text_field (:highest_ed {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.submit ({:class => btn btn-primary}) %>
+    </p>

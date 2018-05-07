@@ -1,0 +1,32 @@
+<h1>Add Instructor</h1>
+<%= form_for :instructor, instructors_path do |f| %>
+    <% if @instructor.errors.any? %>
+        <% @post.errors.full_messages.each do |msg| %>
+            <div class="alert alert-danger"><%= msg %></div>
+        <% end %>
+    <% end %>
+    <p>
+        <%= f.label :first_name %><br>
+        <%= f.text_field (:first_name, {:class => 'form-control'}) %>
+        <%= f.label :last_name %><br>
+        <%= f.text_field (:last_name, {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.label :course %><br>
+        <%= f.text_field (:course, {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.label :cohorts %><br>
+        <%= f.text_field (:cohorts {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.label :salary %><br>
+        <%= f.text_field (:salary, {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.submit ({:class => btn btn-primary}) %>
+    </p>

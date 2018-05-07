@@ -1,0 +1,12 @@
+<h2> <%= @course.name %></h2>
+
+<p>Course: <%= @cohort.course %></p>
+<p>Start Date: <%= @cohort.start_date %></p>
+<p>End Date: <%= @cohort.end_date %></p>
+<p>Instructor: <%= @cohort.instructor %></p>
+<p>Students: <%= @cohort.students %></p>
+
+
+<hr>
+<%= link_to "Edit", edit_instructor_path(@instructor), :class => 'btn btn-default' %>
+<%= link_to "Delete", instructor_path(@instructor), method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-danger' %>

@@ -4,12 +4,49 @@
     <title>Administration</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' %>
+
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Admin Blog</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><% link_to "Students", students_path %></li>
+      <li><% link_to "Instructors", instructors_path %></li>
+      <li><% link_to "Courses", courses_path %></li>
+      <li><% link_to "Cohorts", cohorts_path %></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="current-user">
+    <% if current_user %> 
+      <ul> 
+        <li><%= current_user.username %></li> 
+        <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
+      </ul> 
+    <% else %> 
+      <ul> 
+        <li><%= link_to "Login", 'login' %></a></li> 
+      </ul> 
+  <% end %>
+</div>
+
+<div class="container">
     <%= yield %>
+    </div>
   </body>
 </html>
