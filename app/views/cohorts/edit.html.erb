@@ -1,7 +1,7 @@
 <h1>Edit Cohort</h1>
 <%= form_for :cohort, url: cohort_path(@cohort), method: :patch do |f| %>
-    <% if @instructor.errors.any? %>
-        <% @post.errors.full_messages.each do |msg| %>
+    <% if @cohort.errors.any? %>
+        <% @cohort.errors.full_messages.each do |msg| %>
             <div class="alert alert-danger"><%= msg %></div>
         <% end %>
     <% end %>
@@ -27,5 +27,5 @@
 
 
     <p>
-        <%= f.submit(class: btn btn-primary) %>
+        <%= f.submit(class: 'btn btn-primary') %>
     </p>

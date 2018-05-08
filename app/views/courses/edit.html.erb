@@ -1,7 +1,7 @@
 <h1>Edit Course</h1>
 <%= form_for :course, url: course_path(@course), method: :patch do |f| %>
-    <% if @instructor.errors.any? %>
-        <% @post.errors.full_messages.each do |msg| %>
+    <% if @course.errors.any? %>
+        <% @course.errors.full_messages.each do |msg| %>
             <div class="alert alert-danger"><%= msg %></div>
         <% end %>
     <% end %>
@@ -22,5 +22,7 @@
 
 
     <p>
-        <%= f.submit(class: btn btn-primary) %>
+        <%= f.submit(class: 'btn btn-primary') %>
     </p>
+
+  

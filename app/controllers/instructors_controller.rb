@@ -10,12 +10,13 @@ class InstructorsController < ApplicationController
     end
 
     def create
-        @instructor = Instructor.new(post_params)
+        @instructor = Instructor.new(instructor_params)
 
        if(@instructor.save)
             redirect_to @instructor
        else 
             render 'new'
+       end
     end
 
 
@@ -31,6 +32,7 @@ class InstructorsController < ApplicationController
             redirect_to @instructor
        else 
             render 'edit'
+       end
     end
 
     def show
@@ -49,5 +51,4 @@ class InstructorsController < ApplicationController
         params.require(:instructor).permit(:first_name, :last_name, :course, :cohorts, :salary)
     end
 end
-end
-end
+
