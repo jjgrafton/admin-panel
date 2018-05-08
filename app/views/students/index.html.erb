@@ -2,7 +2,7 @@
 
 <% @students.each do |student| %>
 <div class="well">
-    <h2><%= student.first_name %></h2>
+    <h2 class="body-text"><%= student.first_name %></h2>
         <h2><%= student.last_name %></h2>
     <%= link_to "Full Profile", student_path(student), class: 'btn btn-primary', class: 'admin-form' %>
 </div>

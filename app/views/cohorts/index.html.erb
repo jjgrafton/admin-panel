@@ -2,7 +2,7 @@
 
 <% @cohorts.each do |cohort| %>
 <div class="well">
-    <h2><%= cohort.name %></h2>
+    <h2 class="body-text"><%= cohort.name %></h2>
     <%= link_to "More Info", cohort_path(cohort), class: 'btn btn-primary', class: 'admin-form' %>
 </div>
 

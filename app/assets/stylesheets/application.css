@@ -16,6 +16,8 @@
 
 .admin-form {
     font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 20px;
 }
 
 .header {
@@ -52,4 +54,10 @@ a:hover {
     height: 2px;
     background-color: #272E4F;
     margin-bottom: 20px;
+}
+
+.body-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 15px;
 }

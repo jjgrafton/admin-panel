@@ -5,11 +5,11 @@
     <h1 class="admin-form">Login</h1>
 <% form_for @user do |f| %>
     <%= f.error_messages %>
-    <p>
+    <p class="body-text">
         <%= f.label(:username, class: 'admin-form') %>
         <%= f.text_field(:username, class: 'admin-form') %>
     </p>
-    <p>
+    <p class="body-text">
         <%= f.label(:password, class: 'admin-form') %>
         <%= f.password_field(:password, class: 'admin-form') %>
     </p>
