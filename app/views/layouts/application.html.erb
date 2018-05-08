@@ -5,19 +5,21 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' %>
-
-
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <nav class="header">School of Hard Knocks</nav>
+  <nav class="header-top-line"></nav>
+    <nav class="header-thin-line"></nav>
    <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Admin Blog</a>
+      <a class="navbar-brand" class="header" href="#">Admin Blog</a>
     </div>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" class="header">
       <li class="active"><a href="#">Home</a></li>
       <li><% link_to "Students", students_path %></li>
       <li><% link_to "Instructors", instructors_path %></li>
@@ -25,12 +27,12 @@
       <li><% link_to "Cohorts", cohorts_path %></li>
 
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <ul class="nav navbar-nav navbar-right" class="header">
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </nav>
+<nav class="header-bottom-line"></nav>
 
  
 

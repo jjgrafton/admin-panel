@@ -2,19 +2,19 @@
   <div class="container">
     <div class="form">
 
-    <h1>Login</h1>
+    <h1 class="admin-form">Login</h1>
 <% form_for @user do |f| %>
     <%= f.error_messages %>
     <p>
-        <%= f.label :username %>
-        <%= f.text_field :password %>
+        <%= f.label(:username, class: 'admin-form') %>
+        <%= f.text_field(:username, class: 'admin-form') %>
     </p>
     <p>
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+        <%= f.label(:password, class: 'admin-form') %>
+        <%= f.password_field(:password, class: 'admin-form') %>
     </p>
 
-    <%= f.submit 'Login' %>
+    <%= f.submit('Login', class: 'admin-form') %>
 <% end %>
 
   

@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+.admin-form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    font-family: 'Lora', serif;
+    color: #272E4F;
+    font-size: 50px;
+    padding: 25px 0px 25px 25px;
+    background-color: #F2F2F0;
+}
+
+.header-thin-line {
+    height: 2px;
+    background-color: #272E4F;
+}
+
+.header-top-line {
+    height: 15px;
+    background-color: #FF5E3A;
+}
+
+.navbar {
+    font-family: 'Lora', serif;
+    color: #272E4F;
+    font-size: 25px;
+    background-color: #F2F2F0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF5E3A;
+}
+
+.header-bottom-line {
+    height: 2px;
+    background-color: #272E4F;
+    margin-bottom: 20px;
+}

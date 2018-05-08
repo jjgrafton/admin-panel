@@ -1,4 +1,4 @@
-<h1>Edit Student</h1>
+<h1 class="admin-form">Edit Student</h1>
 <%= form_for :student, url: student_path(@student), method: :patch do |f| %>
     <% if @student.errors.any? %>
         <% @student.errors.full_messages.each do |msg| %>
@@ -6,22 +6,22 @@
         <% end %>
     <% end %>
     <p>
-        <%= f.label :first_name %><br>
-        <%= f.text_field(:first_name, class: 'form-control') %>
-        <%= f.label :last_name %><br>
-        <%= f.text_field(:last_name, class: 'form-control') %>
+        <%= f.label(:first_name, class: 'admin-form') %><br>
+        <%= f.text_field(:first_name, class: 'form-control', class: 'admin-form') %>
+        <%= f.label(:last_name, class: 'admin-form') %><br>
+        <%= f.text_field(:last_name, class: 'form-control', class: 'admin-form') %>
     </p>
 
     <p>
-        <%= f.label :d_o_b %><br>
-        <%= f.text_field(:d_o_b, class: 'form-control') %>
+        <%= f.label(:d_o_b, class: 'admin-form') %><br>
+        <%= f.text_field(:d_o_b, class: 'form-control', class: 'admin-form') %>
     </p>
 
     <p>
-        <%= f.label :highest_ed %><br>
-        <%= f.text_field(:highest_ed, class: 'form-control') %>
+        <%= f.label(:highest_ed, class: 'admin-form') %><br>
+        <%= f.text_field(:highest_ed, class: 'form-control', class: 'admin-form') %>
     </p>
 
     <p>
-        <%= f.submit(class: 'btn btn-primary') %>
+        <%= f.submit(class: 'btn btn-primary', class: 'admin-form') %>
     </p>
