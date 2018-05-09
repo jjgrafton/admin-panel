@@ -20,9 +20,14 @@
         <%= f.text_field(:instructor, class: 'form-control', class: 'admin-form') %>
     </p>
 
+     <p>
+        <%= f.label(:instructor_id, class: 'admin-form') %><br>
+        <%= f.text_field(:instructor_id, class: 'form-control', class: 'admin-form') %>
+    </p>
+
 
     <p>
         <%= f.submit(class: 'btn btn-primary', class: 'admin-form') %>
     </p>
 
-  
+  <% end %>

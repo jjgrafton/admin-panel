@@ -11,33 +11,61 @@
   </head>
 
   <body>
+  
   <nav class="header">School of Hard Knocks</nav>
+  <nav class="header-thin-line"></nav>
   <nav class="header-top-line"></nav>
     <nav class="header-thin-line"></nav>
-   <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" class="header" href="#">Admin Blog</a>
-    </div>
-    <ul class="nav navbar-nav" class="header">
-      <li class="active"><a href="#">Home</a></li>
-      <li><% link_to "Students", students_path %></li>
-      <li><% link_to "Instructors", instructors_path %></li>
-      <li><% link_to "Courses", courses_path %></li>
-      <li><% link_to "Cohorts", cohorts_path %></li>
+    <div class="welcome-user">Welcome</div>
+    <nav class="header-bottom-line"></nav>
 
-    </ul>
-    <ul class="nav navbar-nav navbar-right" class="header">
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-    </ul>
-  </div>
+  <div class="body">
+ <nav class="navigation">
+  <ul class="mainmenu">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Students</a>
+      <ul class="submenu">
+        <li><a href="">Create</a></li>
+        <li><a href="">Edit</a></li>
+        <li><a href="">Show All</a></li>
+      </ul>
+    </li>
+    <li><a href="">Instructors</a>
+      <ul class="submenu">
+        <li><a href="">Create</a></li>
+        <li><a href="">Edit</a></li>
+        <li><a href="">Show All</a></li>
+      </ul>
+    </li>
+    <li><a href="">Courses</a>
+      <ul class="submenu">
+        <li><a href="">Create</a></li>
+        <li><a href="">Edit</a></li>
+        <li><a href="">Show All</a></li>
+      </ul>
+    </li>
+    <li><a href="">Cohorts</a>
+      <ul class="submenu">
+        <li><a href="">Create</a></li>
+        <li><a href="">Edit</a></li>
+        <li><a href="">Show All</a></li>
+      </ul>
+    </li>
+    <li><a href="">Contact us</a></li>
+  </ul>
 </nav>
-<nav class="header-bottom-line"></nav>
+   
+    
+    
+
+
 
  
 
 <div class="container">
     <%= yield %>
+    </div>
     </div>
   </body>
 </html>

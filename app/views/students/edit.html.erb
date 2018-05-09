@@ -8,6 +8,8 @@
     <p>
         <%= f.label(:first_name, class: 'admin-form') %><br>
         <%= f.text_field(:first_name, class: 'form-control', class: 'admin-form') %>
+        </p>
+        <p>
         <%= f.label(:last_name, class: 'admin-form') %><br>
         <%= f.text_field(:last_name, class: 'form-control', class: 'admin-form') %>
     </p>
@@ -23,5 +25,17 @@
     </p>
 
     <p>
+        <%= f.label(:cohort_id, class: 'admin-form') %><br>
+        <%= f.text_field(:cohort_id, class: 'form-control', class: 'admin-form') %>
+    </p>
+
+    <p>
+        <%= f.label(:course_id, class: 'admin-form') %><br>
+        <%= f.text_field(:course_id, class: 'form-control', class: 'admin-form') %>
+    </p>
+
+    <p>
         <%= f.submit(class: 'btn btn-primary', class: 'admin-form') %>
     </p>
+
+    <% end %>
