@@ -1,9 +1,9 @@
-<h1 class="admin-form">Courses</h1>
+<h1 class="admin-form-header">Courses</h1>
 
 <% @courses.each do |course| %>
 <div class="well">
-    <h2 class="body-text"><%= course.name %></h2>
-    <%= link_to "More Info", course_path(course), class: 'btn btn-primary',  %>
+    <h2 class="admin-form"><%= course.name %></h2>
+    <%= link_to "More Info", course_path(course), class: 'btn btn-primary', class: 'admin-form-orange'  %>
 </div>
 
 

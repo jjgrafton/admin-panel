@@ -1,7 +1,7 @@
 class CohortsController < ApplicationController
     #before_action :require_user, only: [:index, :show]
     def index
-        @cohorts = Cohorts.all
+        @cohorts = Cohort.all
     end
 
     def new

@@ -1,4 +1,4 @@
-<h1 class="admin-form">Edit Course</h1>
+<h1 class="admin-form-header">Edit Course</h1>
 <%= form_for :course, url: course_path(@course), method: :patch do |f| %>
     <% if @course.errors.any? %>
         <% @course.errors.full_messages.each do |msg| %>
@@ -7,22 +7,22 @@
     <% end %>
     <p>
         <%= f.label(:name, class: 'admin-form') %><br>
-        <%= f.text_field(:name, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:name, class: 'form-control') %>
     </p>
     
     <p>
         <%= f.label(:total_in_course_hours, class: 'admin-form') %><br>
-        <%= f.text_field(:total_in_course_hours, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:total_in_course_hours, class: 'form-control') %>
     </p>
 
     <p>
         <%= f.label(:instructor, class: 'admin-form') %><br>
-        <%= f.text_field(:instructor, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:instructor, class: 'form-control') %>
     </p>
 
      <p>
         <%= f.label(:instructor_id, class: 'admin-form') %><br>
-        <%= f.text_field(:instructor_id, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:instructor_id, class: 'form-control') %>
     </p>
 
 

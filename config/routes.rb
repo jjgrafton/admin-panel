@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   root 'users#index'
 
   resources :students
-
+get '/students' => 'students#index'
   resources :instructors
+  get '/instructors' => 'instructors#index'
 
   resources :courses
 

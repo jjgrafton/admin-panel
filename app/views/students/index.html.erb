@@ -1,10 +1,9 @@
-<h1 class="admin-form">Students</h1>
+<h1 class="admin-form-header">Students</h1>
 
 <% @students.each do |student| %>
 <div class="well">
-    <h2 class="body-text"><%= student.first_name %></h2>
-        <h2><%= student.last_name %></h2>
-    <%= link_to "Full Profile", student_path(student), class: 'btn btn-primary', class: 'admin-form' %>
+    <p class="admin-form"><%= student.first_name %> <%= student.last_name %> </p>
+    <%= link_to " Full Profile", student_path(student), class: 'btn btn-primary', class: 'admin-form-orange' %>
 </div>
 
 

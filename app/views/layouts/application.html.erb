@@ -11,48 +11,51 @@
   </head>
 
   <body>
-  
-  <nav class="header">School of Hard Knocks</nav>
+  <div class="top-line"></div>
+  <div class="title-bar">
+  <div class="symbols-one">⚒</div>
+  <div class="header-one">school of </div><div class="header-two">HARD KNOCKS</div>
+  <div class="symbols-two">⚒</div>
+  </div>
   <nav class="header-thin-line"></nav>
   <nav class="header-top-line"></nav>
     <nav class="header-thin-line"></nav>
     <div class="welcome-user">Welcome</div>
+      <nav class="header-thin-line"></nav>
+
+      <nav class="header-top-line"></nav>
+
     <nav class="header-bottom-line"></nav>
 
   <div class="body">
  <nav class="navigation">
   <ul class="mainmenu">
-    <li><a href="">Home</a></li>
-    <li><a href="">About</a></li>
+    <li><a href="#">Home</a></li>
     <li><a href="">Students</a>
       <ul class="submenu">
-        <li><a href="">Create</a></li>
-        <li><a href="">Edit</a></li>
-        <li><a href="">Show All</a></li>
+        <li><%= link_to "Create New", new_student_path(@student) %> </li>
+        <li><%= link_to "View All", students_path %></li>
       </ul>
     </li>
     <li><a href="">Instructors</a>
       <ul class="submenu">
-        <li><a href="">Create</a></li>
-        <li><a href="">Edit</a></li>
-        <li><a href="">Show All</a></li>
+        <li><%= link_to "Create New", new_instructor_path(@instructor) %></a></li>
+        <li><%= link_to "View All", instructors_path %></li>
       </ul>
     </li>
     <li><a href="">Courses</a>
       <ul class="submenu">
-        <li><a href="">Create</a></li>
-        <li><a href="">Edit</a></li>
-        <li><a href="">Show All</a></li>
+        <li><%= link_to "Create New", new_course_path(@course) %></li>
+        <li><%= link_to "View All", courses_path %></li>
       </ul>
     </li>
     <li><a href="">Cohorts</a>
       <ul class="submenu">
-        <li><a href="">Create</a></li>
-        <li><a href="">Edit</a></li>
-        <li><a href="">Show All</a></li>
+        <li><%= link_to "Create", new_cohort_path(@cohort) %></li>
+        <li><%= link_to "View All", cohorts_path %></li>
       </ul>
     </li>
-    <li><a href="">Contact us</a></li>
+    <li><a href="">Logout</a></li>
   </ul>
 </nav>
    

@@ -1,4 +1,4 @@
-<h1 class="admin-form">New Cohort</h1>
+<h1 class="admin-form-header">New Cohort</h1>
 <%= form_for :cohort, url: cohorts_path do |f| %>
 <% if false %>
     <% if @cohort.errors.any? %>
@@ -10,39 +10,40 @@
     <% end %>
     <p>
         <%= f.label(:name, class: 'admin-form') %><br>
-        <%= f.text_field(:name, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:name, class: 'form-control') %>
     </p>
+    
     <p>
         <%= f.label(:start_date, class: 'admin-form') %><br>
-        <%= f.text_field(:start_date, class: 'form-control', class: 'admin-form') %>
-        </p>
-        <p>
+        <%= f.date_field(:start_date, class: 'admin-form') %>
+    </p>
+    <p>
         <%= f.label(:end_date, class: 'admin-form') %><br>
-        <%= f.text_field(:end_date, class: 'form-control', class: 'admin-form') %>
-        </p>
-        <p>
+        <%= f.date_field(:end_date, class: 'admin-form') %>
+    </p>
+    <p>
         <%= f.label(:course_name, class: 'admin-form') %><br>
-        <%= f.text_field(:course_name, class: 'form-control', class: 'admin-form') %>
-        </p>
-        <p>
+        <%= f.text_field(:course_name, class: 'form-control') %>
+    </p>
+    <p>
         <%= f.label(:course_id, class: 'admin-form') %><br>
-        <%= f.text_field(:course_id, class: 'form-control', class: 'admin-form') %>
-        </p>
-        <p>
+        <%= f.text_field(:course_id, class: 'form-control') %>
+    </p>
+    <p>
         <%= f.label(:instructor_name, class: 'admin-form') %><br>
-        <%= f.text_field(:instructor_name, class: 'form-control', class: 'admin-form') %>
-        </p>
-        <p>
+        <%= f.text_field(:instructor_name, class: 'form-control') %>
+    </p>
+    <p>
         <%= f.label(:instructor_id, class: 'admin-form') %><br>
-        <%= f.text_field(:instructor_id, class: 'form-control', class: 'admin-form') %>
-        </p>
-        <p>
+        <%= f.text_field(:instructor_id, class: 'form-control') %>
+    </p>
+    <p>
         <%= f.label(:students, class: 'admin-form') %><br>
-        <%= f.text_field(:students, class: 'form-control', class: 'admin-form') %>
-        </p>
-        <p>
+        <%= f.text_field(:students, class: 'form-control') %>
+    </p>
+    <p>
         <%= f.label(:student_id, class: 'admin-form') %><br>
-        <%= f.text_field(:student_id, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:student_id, class: 'form-control') %>
     </p>
 
 

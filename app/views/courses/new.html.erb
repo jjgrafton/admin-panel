@@ -1,4 +1,4 @@
-<h1 class="admin-form">New Course</h1>
+<h1 class="admin-form-header">New Course</h1>
 <%= form_for :course, url: courses_path do|f| %>
 <% if false %>
     <% if @instructor.errors.any? %>
@@ -9,22 +9,22 @@
     <% end %>
     <p>
         <%= f.label(:name, class: 'admin-form') %><br>
-        <%= f.text_field(:name, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:name, class: 'form-control') %>
     </p>
     
     <p>
         <%= f.label(:total_in_course_hours, class: 'admin-form') %><br>
-        <%= f.text_field(:total_in_course_hours, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:total_in_course_hours, class: 'form-control') %>
     </p>
 
      <p>
         <%= f.label(:instructor_name, class: 'admin-form') %><br>
-        <%= f.text_field(:instructor_name, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:instructor_name, class: 'form-control') %>
     </p>
 
     <p>
         <%= f.label(:instructor_id, class: 'admin-form') %><br>
-        <%= f.text_field(:instructor_id, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:instructor_id, class: 'form-control') %>
     </p>
 
 

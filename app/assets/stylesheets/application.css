@@ -29,12 +29,70 @@
     font-size: 20px;
 }
 
-.header {
+.admin-form-bold {
+    font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.admin-form-orange {
+    font-family: 'Montserrat', sans-serif;
+    color: #FF5E3A;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.admin-form-orange:hover {
+    font-family: 'Montserrat', sans-serif;
+    color: 2C365D;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.admin-form-header {
+    font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 40px;
+}
+
+.top-line {
+    height: 15px;
+    background-color: #272E4F;
+}
+
+.title-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F0;
+}
+
+.symbols-one {
+    color: #FF5E3A;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.symbols-two {
+    color: #FF5E3A;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.header-one {
+    font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 50px;
+    padding: 25px 0px 25px 25px;
+}
+
+.header-two {
     font-family: 'Lora', serif;
     color: #272E4F;
     font-size: 50px;
     padding: 25px 0px 25px 25px;
-    background-color: #F2F2F0;
 }
 
 .header-thin-line {
@@ -71,6 +129,15 @@
 
 .navigation {
     width: 300px;
+}
+
+.form-control {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.well {
+    display: flex;
+    flex-direction: row;
 }
 
 /* reset our lists to remove bullet points and padding */

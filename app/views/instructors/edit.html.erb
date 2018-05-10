@@ -1,4 +1,4 @@
-<h1 class="admin-form">Edit Instructor</h1>
+<h1 class="admin-form-header">Edit Instructor</h1>
 <%= form_for :instructor, url: instructor_path(@instructor), method: :patch do |f| %>
     <% if @instructor.errors.any? %>
         <% @post.errors.full_messages.each do |msg| %>
@@ -7,26 +7,40 @@
     <% end %>
     <p>
         <%= f.label(:first_name, class: 'admin-form') %><br>
-        <%= f.text_field(:first_name, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:first_name, class: 'form-control', ) %>
+    </p>
+    <p>
         <%= f.label(:last_name, class: 'admin-form') %><br>
-        <%= f.text_field(:last_name, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:last_name, class: 'form-control') %>
     </p>
 
     <p>
         <%= f.label(:course, class: 'admin-form') %><br>
-        <%= f.text_field(:course, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:course_name, class: 'form-control') %>
+    </p>
+
+     <p>
+        <%= f.label(:course_id, class: 'admin-form') %><br>
+        <%= f.text_field(:course_id, class: 'form-control') %>
     </p>
 
     <p>
         <%= f.label(:cohorts, class: 'admin-form') %><br>
-        <%= f.text_field(:cohorts, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:cohort_names, class: 'form-control') %>
+    </p>
+
+     <p>
+        <%= f.label(:cohort_ids, class: 'admin-form') %><br>
+        <%= f.text_field(:cohort_id, class: 'form-control') %>
     </p>
 
     <p>
         <%= f.label(:salary, class: 'admin-form') %><br>
-        <%= f.text_field(:salary, class: 'form-control', class: 'admin-form') %>
+        <%= f.text_field(:salary, class: 'form-control') %>
     </p>
 
     <p>
         <%= f.submit(class: 'btn btn-primary', class: 'admin-form') %>
     </p>
+
+    <% end %>

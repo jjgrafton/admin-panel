@@ -1,9 +1,9 @@
-<h1 class="admin-form">Cohorts</h1>
+<h1 class="admin-form-header">Cohorts</h1>
 
 <% @cohorts.each do |cohort| %>
 <div class="well">
-    <h2 class="body-text"><%= cohort.name %></h2>
-    <%= link_to "More Info", cohort_path(cohort), class: 'btn btn-primary', class: 'admin-form' %>
+    <p class="admin-form"><%= cohort.name %></p>
+    <%= link_to " More Info", cohort_path(cohort), class: 'btn btn-default', class: 'admin-form-orange' %>
 </div>
 
 

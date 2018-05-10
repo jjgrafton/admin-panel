@@ -1,7 +1,7 @@
 class InstructorsController < ApplicationController
     #before_action :require_user, only: [:index, :show]
     def index
-        @instructors = Instructors.all
+        @instructors = Instructor.all
     end
 
     def new
@@ -28,7 +28,7 @@ class InstructorsController < ApplicationController
     def update
         @instructor = Instructor.find(params[:id])
         
-        if(@instructor.update(inspector_params))
+        if(@instructor.update(instructor_params))
             redirect_to @instructor
        else 
             render 'edit'
