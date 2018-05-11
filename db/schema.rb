@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_07_184029) do
+ActiveRecord::Schema.define(version: 2018_05_11_175353) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,11 +19,8 @@ ActiveRecord::Schema.define(version: 2018_05_07_184029) do
     t.string "name"
     t.date "start_date"
     t.date "end_date"
-    t.string "course_name"
     t.integer "course_id"
-    t.string "instructor_name"
     t.integer "instructor_id"
-    t.string "students"
     t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -49,11 +46,8 @@ ActiveRecord::Schema.define(version: 2018_05_07_184029) do
   create_table "instructors", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "course_name"
     t.integer "course_id"
-    t.string "cohort_names"
     t.integer "cohort_id"
-    t.string "students"
     t.integer "salary"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -72,9 +66,7 @@ ActiveRecord::Schema.define(version: 2018_05_07_184029) do
     t.string "last_name"
     t.date "d_o_b"
     t.string "highest_ed"
-    t.string "cohort_names"
     t.integer "cohort_id"
-    t.string "course_names"
     t.integer "course_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

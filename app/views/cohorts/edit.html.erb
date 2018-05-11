@@ -12,7 +12,7 @@
     
     <p>
         <%= f.label(:course, class: 'admin-form') %><br>
-        <%= f.text_field(:course, class: 'form-control') %>
+        <%= f.text_field(:course_name, class: 'form-control') %>
     </p>
 
     <p>
@@ -26,11 +26,11 @@
     </p>
 
     <p>
-        <%= f.label(:course_name, class: 'admin-form') %><br>
+        <%= f.label(:cohort_name, class: 'admin-form') %><br>
         <%= f.text_field(:course_name, class: 'form-control') %>
         </p>
         <p>
-        <%= f.label(:course_id, class: 'admin-form') %><br>
+        <%= f.label(:cohort_id, class: 'admin-form') %><br>
         <%= f.text_field(:course_id, class: 'form-control') %>
         </p>
         <p>
@@ -52,5 +52,7 @@
 
 
     <p>
-        <%= f.submit(class: 'btn btn-primary') %>
+        <%= f.submit(class: 'btn btn-primary', class: 'admin-form') %>
     </p>
+
+     <% end %>
