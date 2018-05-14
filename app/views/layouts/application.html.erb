@@ -12,31 +12,33 @@
 
   <body>
   <div class="top-line"></div>
-  <div class="title-bar">
-  <div class="symbols-one">⚒</div>
-  <div class="header-one">school of </div><div class="header-two">HARD KNOCKS</div>
-  <div class="symbols-two">⚒</div>
-  </div>
-  <nav class="header-thin-line"></nav>
-  <nav class="header-top-line"></nav>
-    <nav class="header-thin-line"></nav>
+    <div class="title-bar">
+      <div class="symbols-one">⚒</div>
+      <div class="header-one">school of </div>
+      <div class="header-two">HARD KNOCKS</div>
+      <div class="symbols-two">⚒</div>
+    </div>
+  <div class="header-thin-line"></div>
+  <div class="header-top-line"></div>
+    <div class="header-thin-line"></div>
     <div class="welcome-user">Welcome</div>
-      <nav class="header-thin-line"></nav>
+      <div class="header-thin-line"></div>
 
-      <nav class="header-top-line"></nav>
+      <div class="header-top-line"></div>
 
-    <nav class="header-bottom-line"></nav>
+    <div class="header-bottom-line"></div>
 
   <div class="body">
- <nav class="navigation">
-  <ul class="mainmenu">
-    <li><a href="#">Home</a></li>
-    <li><a href="">Students</a>
-      <ul class="submenu">
-        <li><%= link_to "Create New", new_student_path(@student) %> </li>
-        <li><%= link_to "View All", students_path %></li>
-      </ul>
-    </li>
+      <div class="navigation">
+        <ul class="mainmenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="">Students</a>
+        <ul class="submenu">
+          <li><%= link_to "Create New", new_student_path(@student) %> </li>
+          <li><%= link_to "View All", students_path %></li>
+        </ul>
+        </li>
+    
     <li><a href="">Instructors</a>
       <ul class="submenu">
         <li><%= link_to "Create New", new_instructor_path(@instructor) %></a></li>
@@ -55,20 +57,21 @@
         <li><%= link_to "View All", cohorts_path %></li>
       </ul>
     </li>
-    <li><a href="">Logout</a></li>
-  </ul>
-</nav>
-   
+    <li><%= link_to('Logout', destroy_admin_session_path, method: :delete) %>  </li>
+
+     </div>
+
     
-    
-
-
-
- 
-
-<div class="container">
+ <div class="container">
+    <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     <%= yield %>
     </div>
+
     </div>
+
+ 
+   
   </body>
 </html>
+
