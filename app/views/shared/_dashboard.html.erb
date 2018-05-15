@@ -1,61 +1,66 @@
 
-<div class="body">
 
-<div id="overall-header">
-<div class="top-line"></div>
-    <div class="title-bar">
-      <div class="symbols-one">⚒</div>
-      <div class="header-one">school of </div>
-      <div class="header-two">HARD KNOCKS</div>
-      <div class="symbols-two">⚒</div>
+
+<div id="overall-header" class="col-xs-12" >
+    <div class="top-line"></div>
+        <div class="title-bar">
+          <div class="symbols-one">⚒</div>
+          <div class="header-one">school of </div>
+          <div class="header-two">HARD KNOCKS</div>
+          <div class="symbols-two">⚒</div>
     </div>
+  
   <div class="header-thin-line"></div>
-  <div class="header-top-line"></div>
-    <div class="header-thin-line"></div>
-    <div class="welcome-user">Administration Menu</div>
+    <div class="header-top-line"></div>
       <div class="header-thin-line"></div>
+        <div class="welcome-user">Administration Menu</div>
+          <div class="header-thin-line"></div>
+            <div class="header-top-line"></div>
+              <div class="header-bottom-line"></div>
 
-      <div class="header-top-line"></div>
+</div>
 
-    <div class="header-bottom-line"></div>
-
-    </div>
-
- <div id="overall-nav">
-      <div class="navigation">
-        <ul class="mainmenu">
-          <li><a href="">Students</a>
-        <ul class="submenu">
-          <li><%= link_to "Create New", new_student_path(@student) %> </li>
-          <li><%= link_to "View All", students_path %></li>
-        </ul>
-        </li>
+<div class="row">
+    <div id="overall-nav" class="col-6 .col-md-4">
+        <div class="navigation">
+            <ul class="mainmenu">
+              <li><a href="">Students</a>
+                  <ul class="submenu">
+                    <li><%= link_to "Create New", new_student_path(@student) %> </li>
+                    <li><%= link_to "View All", students_path %></li>
+                  </ul>
+              </li>
     
-    <li><a href="">Instructors</a>
-      <ul class="submenu">
-        <li><%= link_to "Create New", new_instructor_path(@instructor) %></a></li>
-        <li><%= link_to "View All", instructors_path %></li>
-      </ul>
-    </li>
-    <li><a href="">Courses</a>
-      <ul class="submenu">
-        <li><%= link_to "Create New", new_course_path(@course) %></li>
-        <li><%= link_to "View All", courses_path %></li>
-      </ul>
-    </li>
-    <li><a href="">Cohorts</a>
-      <ul class="submenu">
-        <li><%= link_to "Create", new_cohort_path(@cohort) %></li>
-        <li><%= link_to "View All", cohorts_path %></li>
-      </ul>
-    </li>
+              <li><a href="">Instructors</a>
+                  <ul class="submenu">
+                    <li><%= link_to "Create New", new_instructor_path(@instructor) %></a></li>
+                    <li><%= link_to "View All", instructors_path %></li>
+                  </ul>
+              </li>
+
+              <li><a href="">Courses</a>
+                  <ul class="submenu">
+                    <li><%= link_to "Create New", new_course_path(@course) %></li>
+                    <li><%= link_to "View All", courses_path %></li>
+                  </ul>
+              </li>
+
+              <li><a href="">Cohorts</a>
+                  <ul class="submenu">
+                    <li><%= link_to "Create", new_cohort_path(@cohort) %></li>
+                    <li><%= link_to "View All", cohorts_path %></li>
+                  </ul>
+              </li>
    
    
 
-     </div>
-
-      </div>
-      </div>
+          </div>
+  </div>
+  <div id="yield" class="col-12 col-md-8"> 
+    <%= yield %>
+  </div>
+</div>
+      
 
       
 
