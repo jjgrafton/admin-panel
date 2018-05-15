@@ -1,3 +1,7 @@
+
+<div class="body">
+
+<div id="overall-header">
 <div class="top-line"></div>
     <div class="title-bar">
       <div class="symbols-one">⚒</div>
@@ -8,17 +12,18 @@
   <div class="header-thin-line"></div>
   <div class="header-top-line"></div>
     <div class="header-thin-line"></div>
-    <div class="welcome-user">Welcome</div>
+    <div class="welcome-user">Administration Menu</div>
       <div class="header-thin-line"></div>
 
       <div class="header-top-line"></div>
 
     <div class="header-bottom-line"></div>
 
-  <div class="body">
+    </div>
+
+ <div id="overall-nav">
       <div class="navigation">
         <ul class="mainmenu">
-          <li><a href="#">Home</a></li>
           <li><a href="">Students</a>
         <ul class="submenu">
           <li><%= link_to "Create New", new_student_path(@student) %> </li>
@@ -44,9 +49,15 @@
         <li><%= link_to "View All", cohorts_path %></li>
       </ul>
     </li>
-    <li><%= link_to('Logout', destroy_admin_session_path, method: :delete) %>  </li>
+   
+   
 
      </div>
 
+      </div>
+      </div>
 
-    </div>
+      
+
+
+  

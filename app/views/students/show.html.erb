@@ -1,3 +1,6 @@
+
+<%= render 'shared/dashboard' %>
+
 <h2 class="admin-form-header"> <%= @student.first_name %> <%= @student.last_name %></h2><br>
 
 
@@ -15,3 +18,4 @@
 <hr>
 <%= link_to "Edit", edit_student_path(@student), class: 'btn btn-default', class: 'admin-form' %>
 <%= link_to "Delete", student_path(@student), method: :delete, remote: true,   class: 'admin-form-orange', 'data-confirm': 'Are you sure?' %>
+

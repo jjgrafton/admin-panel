@@ -42,7 +42,10 @@ class CoursesController < ApplicationController
         @course = Course.find(params[:id])
         @course.destroy
 
-        redirect_to courses_path
+        respond_to do |format|
+            format.html { redirect_to root_path }
+            format.js { redirect_to root_path}
+          end
     end
 
     private 

@@ -43,7 +43,10 @@ class CohortsController < ApplicationController
         @cohort = Cohort.find(params[:id])
         @cohort.destroy
 
-        redirect_to cohorts_path
+        respond_to do |format|
+            format.html { redirect_to root_path }
+            format.js { redirect_to root_path}
+          end
     end
     
     private 

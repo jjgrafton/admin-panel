@@ -15,8 +15,7 @@
  */
 
 .body {
-    display: flex;
-    flex-direction: row;
+    display: grid;
 }
 
 .container {
@@ -27,6 +26,18 @@
     font-family: 'Montserrat', sans-serif;
     color: #272E4F;
     font-size: 20px;
+}
+
+.login-blue {
+    font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 15px;
+}
+
+.login-orange {
+    font-family: 'Montserrat', sans-serif;
+    color: #FF5E3A;
+    font-size: 15px;
 }
 
 .admin-form-bold {
