@@ -35,6 +35,7 @@ class CohortsController < ApplicationController
 
     def show
         @cohort = Cohort.find(params[:id])
+        @students = Student.where(cohort_id: @cohort.id)
 
     end
 
@@ -47,6 +48,6 @@ class CohortsController < ApplicationController
     
     private 
     def cohort_params
-        params.require(:cohort).permit(:name, :start_date, :end_date, :course_name, :course_id, :instructor_name)
+        params.require(:cohort).permit(:name, :start_date, :end_date, :course_id, :instructor_id, :student_id)
     end
 end

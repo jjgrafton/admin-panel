@@ -2,6 +2,7 @@ class InstructorsController < ApplicationController
     #before_action :require_user, only: [:index, :show]
     def index
         @instructors = Instructor.all
+        
     end
 
     def new
@@ -48,7 +49,7 @@ class InstructorsController < ApplicationController
     end
 
     private def instructor_params
-        params.require(:instructor).permit(:first_name, :last_name, :course, :cohorts, :salary)
+        params.require(:instructor).permit(:first_name, :last_name, :course_id, :cohort_id, :salary)
     end
 end
 

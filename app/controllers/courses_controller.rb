@@ -35,6 +35,7 @@ class CoursesController < ApplicationController
 
     def show
         @course = Course.find(params[:id])
+        @students = Student.where(course_id: @course.id)
     end
 
     def destroy
@@ -46,7 +47,7 @@ class CoursesController < ApplicationController
 
     private 
     def course_params
-        params.require(:course).permit(:name, :total_in_course_hours, :instructor_name)
+        params.require(:course).permit(:name, :total_in_course_hours, :instructor_name, :instructor_id)
     end
 
 end

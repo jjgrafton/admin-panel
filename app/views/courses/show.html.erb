@@ -3,6 +3,13 @@
 <p class="admin-form">Course: <%= @course.name %></p>
 <p class="admin-form">Total Course Hours: <%= @course.total_in_course_hours %></p>
 <p class="admin-form">Instructor: <%= @course.instructor_name %></p>
+<p class="admin-form">Students: 
+<% @students.each do |student| %>
+<div class="well">
+    <p class="admin-form"><%= student.first_name %> <%= student.last_name %></p>
+</p><%= link_to "Full Profile", student_path(student), class: 'btn btn-primary', class: 'admin-form-orange' %>
+</div>
+<% end %>
 
 
 <hr>

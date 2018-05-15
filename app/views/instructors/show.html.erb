@@ -1,10 +1,9 @@
 <p class="admin-form-header"> <%= @instructor.first_name %> <%= @instructor.last_name %></p><br>
 
-<p class="admin-form">Course: <%= @instructor.course_name %></p>
+<p class="admin-form">Course: <%= @instructor.course_id %></p>
 
 
 <p class="admin-form">Total In-Course Hours: <%= @instructor.course.total_in_course_hours %></p>
-<p class="admin-form">Cohorts: </p>
 <p class="admin-form">Cohort ID: <%= @instructor.cohort_id %></p>
 <p class="admin-form">Salary: $<%= @instructor.salary %></p>
 

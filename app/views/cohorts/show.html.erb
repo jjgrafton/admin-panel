@@ -1,10 +1,16 @@
 <h2 class="admin-form-header"> Cohort: <%= @cohort.name %></h2>
 
-<p class="admin-form">Course: <%= @cohort.course_name %></p>
+<p class="admin-form">Course ID: <%= @cohort.course_id %></p>
 <p class="admin-form">Start Date: <%= @cohort.start_date %></p>
 <p class="admin-form">End Date: <%= @cohort.end_date %></p>
-<p class="admin-form">Instructor: <%= @cohort.instructor_name %></p>
-<p class="admin-form">Students: </p>
+<p class="admin-form">Instructor ID: <%= @cohort.instructor_id %></p>
+<p class="admin-form">Students: 
+<% @students.each do |student| %>
+<div class="well">
+    <p class="admin-form"><%= student.first_name %> <%= student.last_name %></p>
+</p><%= link_to "Full Profile", student_path(student), class: 'btn btn-primary', class: 'admin-form-orange' %>
+</div>
+<% end %>
 
 
 <hr>
