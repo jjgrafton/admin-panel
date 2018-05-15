@@ -36,7 +36,7 @@ class StudentsController < ApplicationController
 
     def show
         @student = Student.find(params[:id])
-        @cohort = Cohort.where(cohort_id: @student.cohort.id)
+        @cohort = Cohort.where(cohort_id: @student.cohort_id)
     end
 
     def destroy
@@ -45,7 +45,7 @@ class StudentsController < ApplicationController
       
         respond_to do |format|
           format.html { redirect_to root_path }
-          format.js { }
+          format.js { redirect_to root_path}
         end
       end
 

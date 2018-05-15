@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
-  root 'users#index'
+  root 'users#show'
 
   resources :students
 get '/students' => 'students#index'

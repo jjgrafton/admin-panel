@@ -5,7 +5,7 @@
 <p class="admin-form">Highest Completed Education: <%= @student.highest_ed %></p>
 <p class="admin-form">ID Number: <%= @student.id %></p>
 <p class="admin-form">Course: <%= @student.course_id %></p>
-<p class="admin-form">Cohort: <%= @student.cohort_id %></p> <%= link_to "More Info", cohort_path(cohort), class: 'btn btn-default', class: 'admin-form-orange' %>
+<div class="admin-display"><p class="admin-form">Cohort: <%= @student.cohort_id %></p> <%= link_to "More Info", cohort_path(@cohort), class: 'btn btn-default', class: 'admin-form-orange' %></div>
 
 
 
@@ -14,4 +14,4 @@
 
 <hr>
 <%= link_to "Edit", edit_student_path(@student), class: 'btn btn-default', class: 'admin-form' %>
-<%= link_to "Delete", students_path(@student), method: 'delete', remote: true, class: 'btn btn-default', class: 'admin-form' %>
+<%= link_to "Delete", student_path(@student), method: :delete, remote: true,   class: 'admin-form-orange', 'data-confirm': 'Are you sure?' %>

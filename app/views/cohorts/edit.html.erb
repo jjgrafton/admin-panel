@@ -1,3 +1,5 @@
+<%= render 'shared/dashboard' %>
+
 <h1 class="admin-form-header">Edit Cohort</h1>
 <%= form_for :cohort, url: cohort_path(@cohort), method: :patch do |f| %>
     <% if @cohort.errors.any? %>

@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Administration</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' %>
-    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-  <div class="top-line"></div>
+<div class="top-line"></div>
     <div class="title-bar">
       <div class="symbols-one">⚒</div>
       <div class="header-one">school of </div>
@@ -78,13 +65,4 @@
 <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-    <%= yield %>
     </div>
-
-    </div>
-
- 
-   
-  </body>
-</html>
-

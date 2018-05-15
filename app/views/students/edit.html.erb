@@ -1,3 +1,6 @@
+<%= render 'shared/dashboard' %>
+
+
 <h1 class="admin-form-header">Edit Student</h1>
 <%= form_for :student, url: student_path(@student), method: :patch do |f| %>
     <% if @student.errors.any? %>
