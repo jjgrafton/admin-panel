@@ -14,4 +14,4 @@
 
 <hr>
 <%= link_to "Edit", edit_student_path(@student), class: 'btn btn-default', class: 'admin-form' %>
-<%= link_to "Delete", student_path(@student, method: 'delete', remote: true %>
+<%= link_to "Delete", students_path(@student), method: 'delete', remote: true, class: 'btn btn-default', class: 'admin-form' %>

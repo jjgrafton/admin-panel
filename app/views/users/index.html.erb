@@ -1,11 +1,11 @@
-<%= render 'shared/links' %>
+<%= render 'shared/signin' %>
 
 <div class="login">
   <div class="container">
     <div class="form">
 
     <h1 class="admin-form">Login</h1>
-<% form_for @user do |f| %>
+<% form_for @admin do |f| %>
     <%= f.error_messages %>
     <p class="body-text">
         <%= f.label :username %>

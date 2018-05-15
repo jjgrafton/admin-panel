@@ -36,7 +36,7 @@ class StudentsController < ApplicationController
 
     def show
         @student = Student.find(params[:id])
-
+        @cohort = Cohort.where(cohort_id: @student.cohort.id)
     end
 
     def destroy
