@@ -1,16 +1,7 @@
 
 
 <%= render 'shared/dashboard' %>
+<%= render 'shared/student' %>
 
 
-<h1 class="admin-form-header">Students</h1>
-
-<% @students.each do |student| %>
-<div class="well">
-    <p class="admin-form"><%= student.first_name %> <%= student.last_name %> </p>
-    <%= link_to " Full Profile", student_path(student), class: 'btn btn-primary', class: 'admin-form-orange' %>
-</div>
-
-
-<% end %>
 

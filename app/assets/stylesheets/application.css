@@ -18,8 +18,6 @@
     display: grid;
 }
 
-
-
 .admin-form {
     font-family: 'Montserrat', sans-serif;
     color: #272E4F;
@@ -68,6 +66,15 @@
     font-family: 'Montserrat', sans-serif;
     color: #272E4F;
     font-size: 40px;
+}
+
+.admin-form-header-bold {
+    font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 40px;
+    background-color: #C5C5C5;
+    border-radius: 5px;
+    padding: 5px 5px 5px 15px;
 }
 
 .top-line {
@@ -119,8 +126,8 @@
     background-color: #FF5E3A;
 }
 
-.welcome-user {
-    font-family: 'Lora', serif;
+.admin-form-menu {
+    font-family: 'Montserrat', sans-serif;
     color: #272E4F;
     font-size: 25px;
     background-color: #F2F2F0;
@@ -220,4 +227,92 @@
     overflow: hidden;
     max-height: 0;
     -webkit-transition: all 0.5s ease-out;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: #F2F2F0;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    font-family: 'Montserrat', sans-serif;
+    color: #272E4F;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: left;
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: #999;
+    color: #272E4F;
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid #888;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #666;
+    color: #FF5E3A;
+}
+
+.nav a.active {
+    background-color: #aaa;
+    color: #444;
+    cursor: default;
+}
+
+/* Sub Menus */
+
+.nav li li {
+    font-size: .8em;
+}
+
+/*******************************************
+     Style menu for larger screens
+  
+     Using 650px (130px each * 5 items), but ems
+     or other values could be used depending on other factors
+  ********************************************/
+
+@media screen and (min-width: 650px) {
+    .nav li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+    .nav a {
+        border-bottom: none;
+    }
+    .nav>ul>li {
+        text-align: center;
+    }
+    .nav>ul>li>a {
+        padding-left: 0;
+    }
+    /* Sub Menus */
+    .nav li ul {
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+    .nav li:hover ul {
+        display: block;
+    }
+    .nav li ul li {
+        display: block;
+    }
 }

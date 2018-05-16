@@ -14,4 +14,4 @@
 
 <hr>
 <%= link_to "Edit", edit_instructor_path(@instructor), class: 'btn btn-primary', class: 'admin-form' %>
-<%= link_to "Delete", cohort_path(@cohort), method: :delete, remote: true,   class: 'admin-form-orange', 'data-confirm': 'Are you sure?' %>
+<%= link_to "Delete", instructor_path(@instructor), method: :delete, remote: true,   class: 'admin-form-orange', 'data-confirm': 'Are you sure?' %>
