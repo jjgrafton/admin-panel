@@ -7,9 +7,8 @@
 <p class="admin-form">Date of Birth: <%= @student.d_o_b %></p>
 <p class="admin-form">Highest Completed Education: <%= @student.highest_ed %></p>
 <p class="admin-form">ID Number: <%= @student.id %></p>
-<p class="admin-form">Course: <%= @student.course_id %></p>
-<div class="admin-display"><p class="admin-form">Cohort: <%= @student.cohort_id %></p> 
-<%= link_to "More Info", cohort_path(@student.cohort_id), class: 'btn btn-default', class: 'admin-form-orange' %></div>
+<div class="admin-display"><p class="admin-form">Course: <%= @student.course_id %></p> <%= link_to "More Info", course_path(@student.course_id), class: 'btn btn-default', class: 'admin-form-orange' %></div>
+<div class="admin-display"><p class="admin-form">Cohort: <%= @student.cohort_id %></p><%= link_to "More Info", cohort_path(@student.cohort_id), class: 'btn btn-default', class: 'admin-form-orange' %></div>
 
 
 
